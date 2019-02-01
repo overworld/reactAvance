@@ -22,7 +22,7 @@ export class ChatProviderClass extends Component {
         };
 
         this.props.history.listen((location,done) =>{
-            if (location.pathname === '/login/tchat'){
+            if (location.pathname === '/tchat'){
             this.setState({messageSeenCount : 0});
             }
         })
@@ -36,7 +36,7 @@ export class ChatProviderClass extends Component {
 
     onMessage(msg,){
         let messageSeenCount = this.state.messageSeen;
-        if(this.props.location.pathname === '/login/tchat'){
+        if(this.props.location.pathname === '/tchat'){
             messageSeenCount = 0;
         }
         else {

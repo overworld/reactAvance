@@ -37,8 +37,7 @@ class Login extends Component {
                             <input type="submit" name="send"/>
                         </form>
 
-                        <Link to={`${this.props.match.url}/tchat`}>Accéder à l'Internet</Link>
-                        <Route path={`${this.props.match.path}/tchat`} component={Tchat} />
+                        <Link to={'/tchat'}>Accéder à l'Internet</Link>
                     </div>
                 )}
             </ClientConsumer>
