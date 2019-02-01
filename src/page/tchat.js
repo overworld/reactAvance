@@ -15,7 +15,7 @@ class Tchat extends Component {
 
     }
 
-    getContent(isLogged, message, sendMessage) {
+    getContent(isLogged, message, sendMessage,messageSeen) {
 
 
 
@@ -57,8 +57,9 @@ class Tchat extends Component {
                 <ClientConsumer>
                     {({isLogged}) => (
                         <ChatConsumer>
-                            {({message, sendMessage}) => (
-                                this.getContent(isLogged, message,sendMessage)
+                            {({message, sendMessage,messageSeen}) => (
+                                this.getContent(isLogged, message,sendMessage,messageSeen)
+
                             )}
                         </ChatConsumer>
                     )}
