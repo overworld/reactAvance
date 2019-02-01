@@ -10,7 +10,6 @@ class Tchat extends Component {
 
     constructor(props) {
         super(props);
-        this.socket = window.io.connect('http://localhost:4000');
 
 
     }

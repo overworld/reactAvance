@@ -9,7 +9,7 @@ export class ChatProviderClass extends Component {
     constructor(props) {
         super(props);
 
-        this.socket = window.io.connect('http://localhost:4000');
+        this.socket = window.io.connect('http://172.30.236.88:4000');
         this.socket.on('chat message', this.onMessage.bind(this));
 
         //{msg : 'Hey', time: '01/02/2019 14:00', user: 'ethan'}
