@@ -8,7 +8,7 @@ export class ClientProvider extends Component {
         super(props);
 
         this.state = {
-            isLogged: false,
+            isLogged: true,
             username: '',
             userPicture: ''
         }

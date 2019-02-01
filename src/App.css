@@ -66,10 +66,30 @@ input[type=submit] {
   border-radius: 4px;
   cursor: pointer;
 }
-
+.result{
+  width: 50%;
+  margin: 30px auto;
+  border: 1px solid black;
+  position: relative;
+  height: 200% ;
+}
+.deux{
+  position: relative;
+  padding: 0;
+  background-color: rgba(158,158,158,0.6);
+  margin: 0;
+}.un{
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
 
 form{
 
   background-color: #f2f2f2;
   padding: 20px;
+}
+
+header{
+  background-color: #ff3e3e;
 }
